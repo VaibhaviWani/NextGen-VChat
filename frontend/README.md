@@ -1,75 +1,107 @@
-# React + TypeScript + Vite
+# 🌍 NextGen-VChat
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NextGen-VChat is a modern AI-powered communication platform that enables users to communicate across languages without barriers. The platform combines real-time messaging, voice calls, video conferencing, and AI translation into a single seamless experience.
 
-Currently, two official plugins are available:
+## 🚀 Vision
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Our goal is to build the world's most intelligent communication platform where language is no longer a barrier.
 
-## React Compiler
+Users should be able to:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 💬 Chat in different languages
+* 🎥 Join AI-powered video meetings
+* 🎙️ Speak naturally while AI translates in real time
+* 📝 Generate live transcripts
+* 🤖 Use AI assistants during conversations
+* 🌍 Connect globally without language limitations
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+# 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Frontend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* React
+* TypeScript
+* Vite
+* CSS3
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Planned Backend
 
-```
+* Python (FastAPI)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Planned Database
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+* PostgreSQL
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Planned AI Services
+
+* OpenAI APIs
+* Speech-to-Text
+* Text-to-Speech
+* Translation APIs
+
+---
+
+# 📂 Project Structure
 
 ```
+src/
+│
+├── components/
+│   ├── Navbar/
+│   ├── Hero/
+│   ├── Features/
+│   ├── WhyChooseUs/
+│   ├── Demo/
+│   ├── Testimonials/
+│   ├── Pricing/
+│   └── Footer/
+│
+├── assets/
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+# ✅ Completed
+
+* Modern project setup
+* Responsive Navbar
+* Premium Hero Section
+* Glassmorphism design
+* Animated AI Globe
+* 3D Orbit Animation
+* Floating Language Nodes
+* Statistics Cards
+* Landing Animations
+
+---
+
+# 🚧 Currently Working On
+
+* Features Section
+
+---
+
+# 📌 Planned Features
+
+* AI Translation
+* Video Calling
+* Voice Calling
+* Live Transcription
+* AI Meeting Assistant
+* Screen Sharing
+* File Sharing
+* Authentication
+* User Dashboard
+* Settings
+* Responsive Design
+* Dark Theme
+
+---
+
+# 👩‍💻 Author
+
+Developed by **Vaibhavi Wani**

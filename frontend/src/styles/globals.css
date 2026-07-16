@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+
+    background:
+        radial-gradient(circle at top left,
+        rgba(56,189,248,.15),
+        transparent 35%),
+
+        radial-gradient(circle at bottom right,
+        rgba(139,92,246,.15),
+        transparent 35%),
+
+        #020817;
+
+    color:white;
+
+    overflow-x:hidden;
+}
