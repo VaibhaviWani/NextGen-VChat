@@ -1,0 +1,168 @@
+.client{
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 60px;
+    overflow: hidden;
+}
+
+.clientHeader{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.clientBadge{
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(56,189,248,.08);
+    border: 1px solid rgba(56,189,248,.35);
+    color: #38BDF8;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.clientTitle{
+    margin-top: 24px;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.clientDescription{
+    max-width: 720px;
+    margin: 20px auto 0;
+    color: #CBD5E1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.clientMarquee{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    position: relative;
+}
+
+.clientMarquee::before,
+.clientMarquee::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.clientMarquee::before{
+    left: 0;
+    background: linear-gradient(
+        to right,
+        #020817,
+        transparent
+    );
+}
+
+.clientMarquee::after{
+    right: 0;
+    background: linear-gradient(
+        to left,
+        #020817,
+        transparent
+    );
+}
+
+.clientTrack,
+.clientTrackReverse{
+    display: flex;
+    width: max-content;
+    gap: 24px;
+}
+
+.clientTrack{
+    animation: marqueeLeft 28s linear infinite;
+}
+
+.clientTrackReverse{
+    animation: marqueeRight 28s linear infinite;
+}
+
+.clientTrack:hover,
+.clientTrackReverse:hover{
+    animation-play-state: paused;
+}
+
+.clientCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 30px;
+    border-radius: 18px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(14px);
+    transition: all .35s ease;
+}
+
+.clientCard:hover{
+    transform: translateY(-6px);
+    border-color: rgba(56,189,248,.35);
+    box-shadow: 0 14px 36px rgba(56,189,248,.18);
+}
+
+.clientName{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #E2E8F0;
+    letter-spacing: .5px;
+    transition: color .3s ease;
+}
+
+.clientCard:hover .clientName{
+    color: #38BDF8;
+}
+
+@keyframes marqueeLeft{
+    from{
+        transform: translateX(0);
+    }
+
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes marqueeRight{
+    from{
+        transform: translateX(-50%);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@media(max-width:768px){
+    .client{
+        padding: 90px 24px;
+    }
+
+    .clientTitle{
+        font-size: 2.2rem;
+    }
+
+    .clientCard{
+        min-width: 170px;
+        padding: 18px 24px;
+    }
+
+    .clientName{
+        font-size: 1rem;
+    }
+
+    .clientTrack,
+    .clientTrackReverse{
+        gap: 16px;
+    }
+}

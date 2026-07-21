@@ -1,0 +1,152 @@
+.translationDemo{
+    max-width: 1400px;
+    margin: auto;
+    padding: 120px 60px;
+}
+
+.translationDemoHeader{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.translationDemoBadge{
+    display: inline-flex;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(56,189,248,.08);
+    border: 1px solid rgba(56,189,248,.35);
+    color: #38BDF8;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.translationDemoTitle{
+    margin-top: 24px;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.translationDemoDescription{
+    max-width: 720px;
+    margin: 20px auto 0;
+    color: #CBD5E1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.translationDemoChat{
+    max-width: 850px;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(16px);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.translationDemoDetails{
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    transition: all .3s ease;
+}
+
+.translationDemoDetails.left{
+    align-self: flex-start;
+}
+
+.translationDemoDetails.right{
+    align-self: flex-end;
+    background: rgba(56,189,248,.12);
+    border-color: rgba(56,189,248,.25);
+}
+
+.translationDemoDetails:hover{
+    transform: translateY(-4px);
+    border-color: rgba(56,189,248,.35);
+    box-shadow: 0 12px 30px rgba(56,189,248,.12);
+}
+
+.translationDemoInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.translationDemoLanguage{
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 12px;
+    border-radius: 999px;
+    background: rgba(56,189,248,.12);
+    color: #38BDF8;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.translationDemoSender{
+    color: rgba(255,255,255,.75);
+    font-size: .9rem;
+}
+
+.translationDemoMessage{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: white;
+}
+
+.translationDemoDivider{
+    align-self: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #38BDF8;
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.translationDemoDivider::before,
+.translationDemoDivider::after{
+    content: "";
+    width: 80px;
+    height: 1px;
+    background: rgba(56,189,248,.25);
+}
+
+.translationDemoFlow{
+    max-width: 320px;
+    margin: 40px auto 0;
+    padding: 24px;
+    border-radius: 24px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(12px);
+    text-align: center;
+}
+
+.translationDemoFlowTitle{
+    color: #38BDF8;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.translationDemoFlowLanguage{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.translationDemoArrow{
+    color: #38BDF8;
+    font-size: 1.4rem;
+}

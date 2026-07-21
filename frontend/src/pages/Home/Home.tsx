@@ -4,6 +4,7 @@ import Features from '../../components/landing/Features/Features'
 import WhyChooseUs from '../../components/landing/WhyChooseUs/WhyChooseUs'
 import TranslationDemo from '../../components/landing/TranslationDemo/TranslationDemo'
 import Testimonials from '../../components/landing/Testimonials/Testimonials'
+import Pricing from '../../components/landing/Pricing/Pricing'
 import Clients from '../../components/landing/Clients/Clients'
 import Footer from '../../components/common/Footer/Footer'
 
@@ -16,6 +17,7 @@ function Home(){
             <WhyChooseUs />
             <TranslationDemo />
             <Testimonials />
+            <Pricing />
             <Clients />
             <Footer />
         </>

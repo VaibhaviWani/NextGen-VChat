@@ -1,0 +1,127 @@
+.footer{
+    max-width: 1400px;
+    margin: auto;
+    padding: 100px 60px 40px;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin-bottom: 70px;
+}
+
+.brandSection{
+    flex: 1;
+    max-width: 360px;
+}
+
+.brandLogo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.brandDescription{
+    margin-top: 20px;
+    color: #CBD5E1;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.socialIcons{
+    display: flex;
+    gap: 16px;
+    margin-top: 32px;
+    list-style: none;
+    padding: 0;
+}
+
+.socialIcons li{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.socialIcons li:hover{
+    transform: translateY(-5px);
+    background: rgba(56,189,248,.12);
+    border-color: rgba(56,189,248,.4);
+    box-shadow: 0 12px 30px rgba(56,189,248,.18);
+}
+
+.footerLinks{
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.footerLinkTitle{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footerLinksList{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footerLinksList li{
+    color: #CBD5E1;
+    cursor: pointer;
+    transition: color .25s ease;
+}
+
+.footerLinksList li:hover{
+    color: #38BDF8;
+}
+
+.bottomBar{
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.brandCopyRight,
+.brandBuiltWith{
+    color: #94A3B8;
+    font-size: .95rem;
+}
+
+@media (max-width: 900px){
+    .footer{
+        padding: 80px 24px 30px;
+    }
+
+    .footerContent{
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .footerLinks{
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    }
+
+    .bottomBar{
+        flex-direction: column;
+        text-align: center;
+    }
+}
