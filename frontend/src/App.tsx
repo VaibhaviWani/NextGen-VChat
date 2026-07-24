@@ -6,7 +6,7 @@ import ForgotPassword from  './pages/ForgotPassword/ForgotPassword'
 
 function App() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/login" element={<Login/>} />
