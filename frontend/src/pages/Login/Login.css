@@ -1,0 +1,144 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.loginHeader{
+    text-align: center;
+}
+
+.loginTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.loginSubTitle{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.loginEmail,
+.loginPassword{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.loginEmail label,
+.loginPassword label{
+    color: white;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.loginEmail input,
+.loginPassword input{
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    color: white;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+.loginEmail input::placeholder,
+.loginPassword input::placeholder{
+    color: #94A3B8;
+}
+
+.loginEmail input:focus,
+.loginPassword input:focus{
+    outline: none;
+    border-color: #38BDF8;
+    box-shadow: 0 0 0 4px rgba(56,189,248,.15);
+}
+
+.loginForm a{
+    align-self: flex-end;
+    color: #38BDF8;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.loginForm a:hover{
+    text-decoration: underline;
+}
+
+#btnLogin{
+    margin-top: 8px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#38BDF8,#2563EB);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#btnLogin:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(56,189,248,.3);
+}
+
+.loginDivider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #94A3B8;
+}
+
+.loginDivider::before,
+.loginDivider::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255,255,255,.12);
+}
+
+.loginOptions{
+    font-size: .9rem;
+}
+
+.login > button{
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.login > button:hover{
+    background: rgba(255,255,255,.06);
+    border-color: rgba(56,189,248,.4);
+}
+
+.loginFooter{
+    text-align: center;
+    color: #CBD5E1;
+}
+
+.loginFooter a{
+    color: #38BDF8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.loginFooter a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,155 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.registerHeader{
+    text-align: center;
+}
+
+.registerTitle{
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.registerSubTitle{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #CBD5E1;
+    line-height: 1.7;
+}
+
+.registerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.registerName,
+.registerEmail,
+.registerPassword,
+.registerConfirmPassword{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1.25rem;
+}
+
+.registerName,
+.registerEmail label,
+.registerPassword label,
+.registerConfirmPassword label{
+    color: white;
+    font-size: .95rem;
+    font-weight: 500;
+}
+
+.registerName input,
+.registerEmail input,
+.registerPassword input,
+.registerConfirmPassword input{
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: rgba(255,255,255,.04);
+    color: white;
+    font-size: 1rem;
+    transition: all .3s ease;
+}
+
+.registerName input::placeholder,
+.registerEmail input::placeholder,
+.registerPassword input::placeholder,
+.registerConfirmPassword input::placeholder{
+    color: #94A3B8;
+}
+
+.registerName input:focus,
+.registerEmail input:focus,
+.registerPassword input:focus,
+.registerConfirmPassword input:focus{
+    outline: none;
+    border-color: #38BDF8;
+    box-shadow: 0 0 0 4px rgba(56,189,248,.15);
+}
+
+.registerForm a{
+    align-self: flex-end;
+    color: #38BDF8;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.registerForm a:hover{
+    text-decoration: underline;
+}
+
+#btnRegister{
+    margin-top: 8px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg,#38BDF8,#2563EB);
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+#btnRegister:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(56,189,248,.3);
+}
+
+.registerDivider{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: #94A3B8;
+}
+
+.registerDivider::before,
+.registerDivider::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255,255,255,.12);
+}
+
+.registerOptions{
+    font-size: .9rem;
+}
+
+.register > button{
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,.12);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.register > button:hover{
+    background: rgba(255,255,255,.06);
+    border-color: rgba(56,189,248,.4);
+}
+
+.registerFooter{
+    text-align: center;
+    color: #CBD5E1;
+}
+
+.registerFooter a{
+    color: #38BDF8;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registerFooter a:hover{
+    text-decoration: underline;
+}

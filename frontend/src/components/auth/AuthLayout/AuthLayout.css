@@ -1,0 +1,123 @@
+.authLayout{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #020617;
+}
+
+.authLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+    background:
+        radial-gradient(circle at top left,
+            rgba(56,189,248,.18),
+            transparent 45%),
+        radial-gradient(circle at bottom right,
+            rgba(37,99,235,.18),
+            transparent 45%);
+}
+
+.authLogo{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #38BDF8;
+    margin-bottom: 36px;
+}
+
+.authHeading{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 24px;
+}
+
+.authDescription{
+    max-width: 520px;
+    color: #CBD5E1;
+    line-height: 1.8;
+    font-size: 1.05rem;
+    margin-bottom: 40px;
+}
+
+.authFeatures{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.authFeature{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.authRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px;
+}
+
+.authRight > *{
+    width: 100%;
+    max-width: 460px;
+    padding: 48px;
+    border-radius: 28px;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    backdrop-filter: blur(18px);
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.35),
+        0 0 40px rgba(56,189,248,.08);
+}
+
+@media (max-width: 992px){
+    .authLayout{
+        grid-template-columns: 1fr;
+    }
+
+    .authLeft{
+        padding: 60px 28px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .authHeading{
+        font-size: 2.3rem;
+    }
+
+    .authDescription{
+        max-width: 100%;
+    }
+
+    .authFeatures{
+        align-items: flex-start;
+    }
+
+    .authRight{
+        padding: 28px;
+    }
+}
+
+@media (max-width: 600px){
+    .authLeft{
+        padding: 50px 24px;
+    }
+
+    .authHeading{
+        font-size: 2rem;
+    }
+
+    .authRight > *{
+        padding: 32px 24px;
+    }
+}
