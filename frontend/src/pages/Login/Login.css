@@ -142,3 +142,16 @@
 .loginFooter a:hover{
     text-decoration: underline;
 }
+
+.loginError{
+    color:#ff6b6b;
+    font-size:.9rem;
+    margin-top:.5rem;
+}
+
+.successMessage{
+    color: #22c55e;
+    font-size: 0.95rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}

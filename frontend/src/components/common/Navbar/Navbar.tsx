@@ -1,4 +1,5 @@
-import './Navbar.css';
+import './Navbar.css'
+import { Link } from 'react-router-dom'
 
 interface NavbarLink {
     id: number;
@@ -22,8 +23,8 @@ const navbarLinks: NavbarLink[] = [
 ];
 
 const navbarActions: NavbarAction[] = [
-    { id: 1, name: 'Login', href: '#login', variant: 'secondary' },
-    { id: 2, name: 'Start free', href: '#start-free', variant: 'primary' }
+    { id: 1, name: 'Login', href: '/login', variant: 'secondary' },
+    { id: 2, name: 'Start Free', href: '/register', variant: 'primary' }
 ]
 
 function Navbar (){
@@ -42,9 +43,9 @@ function Navbar (){
                 </ul>   
                 <div className="navbarActions">
                     {navbarActions.map((action) => (
-                        <a key={action.id} href={action.href} className={`navbarAction ${action.variant}`}>
+                        <Link key={action.id} to={action.href} className={`navbarAction ${action.variant}`}>
                             {action.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

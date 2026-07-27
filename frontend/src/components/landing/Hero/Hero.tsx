@@ -1,4 +1,5 @@
 import './Hero.css' 
+import { Link } from 'react-router-dom'
 
 interface HeroStatistic {
     id: number;
@@ -34,7 +35,9 @@ function Hero (){
                 <h1 className="heroTitle">Speak Your Language. Let Everyone Hear Theirs.</h1>
                 <p className="heroDescription">Chat, call and collaborate with anyone in the world while AI translates every message instantly into their preferred language.</p>
                 <div className="heroActions">
-                    <button className="heroStartFree">Start free</button>
+                    <Link to="/register">
+                        <button className="heroStartFree">Start Free</button>
+                    </Link>
                     <button className="heroWatchDemo">Watch demo</button>
                 </div>
                 <div className="heroStatistics">

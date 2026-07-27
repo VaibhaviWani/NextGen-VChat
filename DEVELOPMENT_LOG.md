@@ -162,7 +162,7 @@ Completed the complete authentication interface.
 
 Features:
 
-* React Router setup
+* React Router authentication routes
 * Login page
 * Register page
 * Forgot Password page
@@ -171,6 +171,13 @@ Features:
 * Consistent branding across authentication pages
 * Reusable form styling
 * Navigation using React Router Links
+* Controlled inputs using useState
+* Client-side validation
+* Error state management
+* Loading state
+* Success feedback
+* Responsive authentication layout
+* Navigation from landing page
 
 ## Lessons Learned
 
@@ -202,6 +209,16 @@ Features:
 * Component composition using children
 * Shared page layouts
 * Multi-page application structure
+* useState
+* Controlled Components
+* Form Submission
+* preventDefault()
+* Async functions
+* Promise
+* Loading state management
+* Conditional rendering
+* Basic form validation
+* React Router navigation
 
 ---
 
