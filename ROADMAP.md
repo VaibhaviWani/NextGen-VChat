@@ -7,7 +7,7 @@
 - [x] Authentication Frontend
 
 ## Phase 3
-- [ ] FastAPI Backend
+- [x] FastAPI Backend
 
 ## Phase 4
 - [ ] PostgreSQL Integration

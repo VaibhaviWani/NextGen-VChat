@@ -80,7 +80,7 @@ function Login() {
                     </div>
                     <div className="loginPassword">
                         <label htmlFor="password">Password: </label>
-                        <input id="password" name="password" type="password" placeholder="Enter your password" value={password} onChange={(event) => setPassword(event.target.value)} autoComplete="current-password"></input>
+                        <input id="password" name="password" type="password" placeholder="Enter your Password" value={password} onChange={(event) => setPassword(event.target.value)} autoComplete="current-password"></input>
                         {errors.password && (
                             <p className="loginError">{errors.password}</p>
                         )}

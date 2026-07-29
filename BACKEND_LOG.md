@@ -44,16 +44,48 @@ backend/
 
 ## Week 1
 
-### Backend Initialization
+### ✅ Backend Foundation
 
-- Created backend folder structure
-- Planned scalable FastAPI architecture
+Completed:
+
+- Created Python virtual environment
+- Installed FastAPI & Uvicorn
+- Generated requirements.txt
+- Created backend project structure
+- Built FastAPI application
+- Configured Uvicorn server
+- Implemented APIRouter architecture
+- Added authentication router
+- Created LoginRequest schema using Pydantic
+- Built POST /auth/login endpoint
+- Tested endpoint using Swagger UI
+
+---
+
+## Lessons Learned
+
+- Python virtual environments
+- FastAPI application lifecycle
+- Uvicorn server
+- APIRouter
+- Route prefixes
+- Request vs Response
+- HTTP POST
+- Pydantic BaseModel
+- Request schemas
+- JSON → Python object conversion
+- Swagger/OpenAPI documentation
 
 ---
 
 ## Next Milestone
 
-- Create Python virtual environment
-- Install FastAPI
-- Run first API
-- Explore Swagger UI
+Authentication Backend
+
+Planned:
+
+- Register endpoint
+- Forgot Password endpoint
+- Request validation improvements
+- Password hashing
+- PostgreSQL integration
