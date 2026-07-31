@@ -125,6 +125,14 @@ src/
 - Pydantic request schemas
 - First POST authentication endpoint
 - Interactive Swagger API documentation
+### Authentication Validation
+
+- Email validation using EmailStr
+- Field validation using Field()
+- Cross-field validation using model_validator()
+- Password confirmation validation
+- Improved LoginRequest schema
+- Improved RegisterRequest schema
 
 ---
 

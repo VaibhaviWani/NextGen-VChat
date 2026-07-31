@@ -78,13 +78,38 @@ Completed:
 
 ---
 
+## Week 2
+
+### ✅ Request Validation
+
+Completed:
+
+- Added EmailStr validation
+- Added minimum length validation using Field()
+- Added model-level validation using model_validator()
+- Implemented password confirmation validation
+- Improved LoginRequest validation
+- Improved RegisterRequest validation
+
+---
+
+## Lessons Learned
+
+- EmailStr
+- Field()
+- Field constraints
+- model_validator()
+- Cross-field validation
+- Validation lifecycle
+- Clean request models
+- Separation of validation and business logic
+
 ## Next Milestone
 
 Authentication Backend
 
 Planned:
 
-- Register endpoint
 - Forgot Password endpoint
 - Request validation improvements
 - Password hashing
