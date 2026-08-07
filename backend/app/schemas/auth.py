@@ -1,4 +1,5 @@
 from pydantic import BaseModel, EmailStr, Field, model_validator
+from app.schemas.user import UserResponse
 
 class LoginRequest(BaseModel):
     email: EmailStr
@@ -15,3 +16,7 @@ class RegisterRequest(BaseModel):
             return self
         
         raise ValueError("Passwords do not match.")
+
+class AuthResponse(BaseModel):
+    message: str
+    user: UserResponse

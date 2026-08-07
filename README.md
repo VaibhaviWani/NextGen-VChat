@@ -26,13 +26,14 @@ Users should be able to:
 * Vite
 * CSS3
 
-### Planned Backend
+### Backend
 
-* Python (FastAPI)
-
-### Planned Database
-
-* PostgreSQL
+- Python
+- FastAPI
+- SQLAlchemy
+- PostgreSQL
+- Alembic
+- JWT Authentication
 
 ### Planned AI Services
 
@@ -114,7 +115,9 @@ src/
 - Success/Error feedback
 - Responsive authentication UI
 
-## Backend Foundation
+## Backend
+
+### Foundation
 
 - FastAPI project setup
 - Python virtual environment
@@ -123,22 +126,41 @@ src/
 - APIRouter configuration
 - Authentication router
 - Pydantic request schemas
-- First POST authentication endpoint
 - Interactive Swagger API documentation
-### Authentication Validation
 
-- Email validation using EmailStr
-- Field validation using Field()
-- Cross-field validation using model_validator()
-- Password confirmation validation
-- Improved LoginRequest schema
-- Improved RegisterRequest schema
+### Database
+
+- PostgreSQL integration
+- SQLAlchemy ORM
+- SQLAlchemy engine
+- Session management
+- Declarative Base
+- User database model
+- Database session dependency
+- Unique email constraint
+- Database indexes
+
+### Authentication Backend
+
+- User registration
+- Duplicate email detection
+- Password hashing
+- Password verification
+- User login
+- Generic authentication errors
+- HTTP 401 authentication handling
+- HTTP 409 duplicate-user handling
+- User enumeration protection
+- Secure response models
+- Password exclusion from API responses
 
 ---
 
 # 🚧 Currently Working On
 
-* Authentication Backend
+- JWT Authentication
+- Access and refresh token architecture
+- Protected API routes
 
 ---
 
@@ -158,7 +180,8 @@ src/
 
 ## Application Features
 
-* Authentication ✅ (Frontend UI)
+* Authentication ✅
+* JWT Authentication 🚧
 * AI Translation
 * Video Calling
 * Voice Calling
